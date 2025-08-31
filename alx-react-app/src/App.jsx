@@ -1,3 +1,4 @@
+import WelcomeMessage from './components/WelcomeMessage';
 import Header from './components/Header';
 import MainContent from './components/MainContentMain';
 import Footer from './components/Footer';
@@ -5,7 +6,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import WelcomeMessage from './components/WelcomeMessage';
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
 
   return (
     <>
+    <WelcomeMessage />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -26,7 +27,6 @@ function App() {
         <Header/>
         <MainContent/>
         <Footer/>
-        <WelcomeMessage />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
